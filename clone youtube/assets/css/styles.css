@@ -1,0 +1,192 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+*:visited {
+  color: red;
+  text-decoration: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Nav-bar  */
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 10px 24px;
+}
+
+#nav-bar .left-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 146px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#nav-bar .search-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 404px;
+  height: 40px;
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+}
+
+#nav-bar .search-bar .search-button {
+  background-color: #F8F8F8;
+  padding: 8px 19px 8px 14px;
+}
+
+#nav-bar .search-bar .search-button img,
+#nav-bar .user-infos img,
+#video-content .video-actions .chanel-infos img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#nav-bar .user-infos {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+#nav-bar .user-infos img:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 28px 16px;
+  background: #F9F9F9;
+}
+
+#video-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 10px 75px;
+}
+
+.watching-video h1 {
+  font-size: 1.25rem;
+  margin-top: 16px;
+}
+
+.video-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.channel-infos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.channel-infos img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.channel-infos p {
+  color: #515151;
+}
+
+.channel-infos span {
+  display: block;
+  font-weight: 700;
+  color: black;
+}
+
+.video-actions button {
+  background-color: #CC0000;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 10px;
+  width: 159px;
+  height: 40px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.deslike,
+.share,
+.download {
+  margin-right: 8px;
+}
+
+.watching-video h3 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+  color: #515151;
+}
+
+.video-description {
+  font-weight: 200;
+  font-size: 0.875rem;
+  color: #515151;
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+/* Sidebar */
+.sidebar-video {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.sidebar-video-info {
+  width: 196px;
+}
+
+.sidebar-video h2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 8px 0;
+}
+
+.sidebar-video h3,
+.sidebar-video p {
+  font-size: 0.75rem;
+  color: #515151;
+  font-weight: 400;
+  margin: 8px 0;
+}
